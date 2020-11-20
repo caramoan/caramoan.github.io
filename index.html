@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Caramoan Page Sample</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="../\CaramoanSample\style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <header>
+    <div class="main">
+        <div class="logo">
+            <a href="index.html"><img src="img/cara.png"></a>
+        </div>
+        <ul>
+        <li  class="active"><a href="index.html"> Home </a></li>
+        <li><a href="accommodation.html"> Accommodation  </a></li>
+        <li><a href="activities.html"> Activities </a></li>
+        <li><a href="contact.html"> Contact </a></li>
+    </ul>
+    </div>
+    <div class="title">
+        <h1>Sample only</h1>
+
+        
+    </div>
+</header>
+
+
+
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="img/ss1.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="img/ss2.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="img/ss3.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+    <div class="numbertext">4 / 5</div>
+    <img src="img/ss4.jpg" style="width:100%">
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 5</div>
+    <img src="img/ss5.jpg" style="width:100%">
+  </div>
+
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+</script>
+
+
+<br>
+<h1 class="abouts"> About Caramoan </h1>
+<div class="about">
+<br> <br>
+<div class="content">
+    Caramoan Island is located in the lower eastern part of Camarines sur in the Bicol region of the Philippine archipelago.
+    It's a first-class municipality, a rugged place of land extending into the waters of Maqueda Channel on the north and east
+    and Lagonoy Gulf on the south.It has a 4,000 hectare limestone forest well endowed with a rich diversity of flora and fauna.
+    It boasts of having perfect white sand beaches, tranquil lakes, deep caves, coves and rich marine life.
+   <br><br>
+   
+
+   <div class="concol">
+   <img src="img/ss6.jpg">
+   </div>  
+
+   <div class="concol">
+    <img src="img/tc.jpg">
+    </div>
+    <br><br>
+
+</div>
+    <br>
+    <p>Very little is known about Caramoan, isolated from the rest of Camarines Sur. 
+    It is no surprise why Philippine's Secret Paradise remains unexploited from commercial tourism. 
+    Caramoan gives 'island hopping' a new meaning. Enjoy its beauty in many ways.
+    Great ocean adventure for kayakers, snorkle and scuba dive to experience the diverse marine life, trek and search for 
+    the enigmatic lagoon, rock climb the limestone cliffs, explore the caves or just star gaze at night.
+    <br><br>
+    The Caramoan peninsula possesses an array of majestic natural wonders, 
+    where you can get up close and feel the serenity of nature.
+    It's the perfect place for your dream vacation getaway.</p>
+</div>
+<br></br>
+<h2 class="abouts">Truly it's more fun in Caramoan! </h2>
+   <br><br><br>
+
+
+        <div class="footer">
+            <div class="footer-col1">
+                <div class="applogo">
+                    <a href="https://play.google.com/store" target="_blank"><img src="img/dot.png"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="https://play.google.com/store" target="_blank"><img src="img/camsur.png"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="https://www.apple.com/ph/app-store/" target="_blank"><img src="img/mun.png"></a>
+                    
+                </div>
+            </div>
+            <div class="footer-col1">
+                <img src="img/cara.png"><br>
+                <p>Our purpose is to share the hidden paradise of Caramoan Islands to everyone.</p>
+            </div>
+
+     
+
+        </div>
+
+            <p class="copy">NaCopyright-SampleOnly</p>
+    
+
+
+
+</body>
+</html>
